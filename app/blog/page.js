@@ -1,4 +1,5 @@
 import blogData from "@/data/blogData.json";
+import Link from "next/link";
 
 export default async function Blog() {
     const blogs =  blogData
@@ -9,7 +10,12 @@ export default async function Blog() {
                 <div className="mt-5">
                     {
                         blogs.map(blog => {
-                            return <p className="pb-5" key={blog.id}>{blog.title}</p>
+                            return (
+                                <Link key={blog.id} href={`/blog/${blog.id}`}>
+                                    <p className="pb-5" >{blog.title}</p>
+                                </Link>
+                                )
+
                         })
                     }
                 </div>
