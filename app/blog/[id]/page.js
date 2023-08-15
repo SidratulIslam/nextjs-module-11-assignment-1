@@ -1,4 +1,5 @@
 import blogData from "../../../data/blogData.json";
+import styles from './blog[id].module.css'
 
 export default async function SingleBlog({params}) {
     const { id } = params // get the id from the route query
@@ -16,7 +17,7 @@ export default async function SingleBlog({params}) {
     // otherwise, display the post title, content, and date
     return (
         <div>
-            <h1>{post.title}</h1>
+            <h1 className={styles.title}>{post.title}</h1>
             <p>{post.content}</p>
             <p>{post.date}</p>
         </div>
