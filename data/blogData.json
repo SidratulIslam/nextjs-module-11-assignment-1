@@ -1,0 +1,20 @@
+[
+    {
+        "id": "1",
+        "title": "Hello Next.js",
+        "content": "This is my first blog post using Next.js.",
+        "date": "2023-08-15"
+    },
+    {
+        "id": "2",
+        "title": "Next.js Features",
+        "content": "Next.js has many features that make it easy to build fast and dynamic web apps.",
+        "date": "2023-08-16"
+    },
+    {
+        "id": "3",
+        "title": "Next.js Deployment",
+        "content": "Next.js can be deployed to various platforms with minimal configuration.",
+        "date": "2023-08-17"
+    }
+]
